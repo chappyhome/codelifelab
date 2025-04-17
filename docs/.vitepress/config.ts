@@ -73,9 +73,9 @@ const vitePressI18nConfig: VitePressI18nOptions = {
 const vitePressConfig: UserConfig = {
   title: 'Python生活实验室',
   lastUpdated: true,
-  outDir: '../dist',
   cleanUrls: true,
   metaChunk: true,
+  outDir: '../dist',
   rewrites: {
     'en/:rest*': ':rest*'
   },
