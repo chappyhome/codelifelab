@@ -15,7 +15,7 @@
     "url": "https://github.com/jooy2/vitepress-sidebar/issues"
   },
   "scripts": {
-    "build": "npm run format:fix && tsc --project tsconfig.prod.json && npm run minify",
+    "format:build": "npm run format:fix && tsc --project tsconfig.prod.json && npm run minify",
     "test": "npm run build && glob -c \"tsx --test\" \"./test/**/*.test.ts\"",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -24,7 +24,7 @@
     "format": "prettier .",
     "format:fix": "prettier . --write",
     "dev": "npm run build && vitepress dev docs",
-    "docs:build": "npm run build && vitepress build docs",
+    "build": "npm run build && vitepress build docs",
     "docs:serve": "npm run build && npm run docs:build && vitepress serve docs"
   },
   "engines": {
