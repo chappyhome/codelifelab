@@ -10,7 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "config",
     "strict": true,
     "newLine": "lf"
   },

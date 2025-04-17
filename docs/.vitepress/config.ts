@@ -1,9 +1,9 @@
-import { withSidebar } from '../../dist/index.js';
+import { withSidebar } from '../../config/index.js';
 import packageJson from '../../package.json' with { type: 'json' };
 import { defineConfig, UserConfig } from 'vitepress';
 import { withI18n } from 'vitepress-i18n';
 import type { VitePressI18nOptions } from 'vitepress-i18n/types';
-import type { VitePressSidebarOptions } from '../../dist/types.js';
+import type { VitePressSidebarOptions } from '../../config/types.js';
 
 const defaultLocale: string = 'en';
 const supportLocales: string[] = [defaultLocale, 'zhHans'];
@@ -73,7 +73,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
 const vitePressConfig: UserConfig = {
   title: 'Python生活实验室',
   lastUpdated: true,
-  outDir: '../docs-dist',
+  outDir: '../dist',
   cleanUrls: true,
   metaChunk: true,
   rewrites: {
