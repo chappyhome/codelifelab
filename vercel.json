@@ -1,9 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "nuxt.config.js",
-      "use": "@nuxtjs/vercel-builder",
-      "config": {}
+  "git": {
+    "deploymentEnabled": {
+      "gh-pages": false
     }
-  ]
+  }
 }
