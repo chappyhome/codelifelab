@@ -75,7 +75,6 @@ const vitePressConfig: UserConfig = {
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
-  outDir: '../dist',
   rewrites: {
     'en/:rest*': ':rest*'
   },
