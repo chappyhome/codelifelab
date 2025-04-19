@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /en/basic-grammar/41-personal-address-book
+      link: /basic-grammar/41-personal-address-book
   image:
     src: /sidebar.svg
     alt: Sidebar

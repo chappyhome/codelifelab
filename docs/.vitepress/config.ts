@@ -46,7 +46,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
       nav: [
         {
           text: 'Fun Learning',
-          link: '/en/basic-grammar/41-personal-address-book'
+          link: '/basic-grammar/41-personal-address-book'
         }
         // {
         //   text: 'Options',
