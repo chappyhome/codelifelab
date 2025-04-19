@@ -24,7 +24,7 @@
     "format": "prettier .",
     "format:fix": "prettier . --write",
     "dev": "npm run build && vitepress dev docs",
-    "build": "vitepress build docs --output dist",
+    "build": "npm run build &&  vitepress build docs --output dist",
     "docs:serve": "npm run build && npm run docs:build && vitepress serve docs"
   },
   "engines": {

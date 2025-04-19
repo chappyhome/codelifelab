@@ -46,24 +46,24 @@ const vitePressI18nConfig: VitePressI18nOptions = {
       nav: [
         {
           text: 'Fun Learning',
-          link: '/guide/getting-started'
-        },
-        {
-          text: 'Options',
-          link: '/guide/options'
+          link: '/en/basic-grammar/41-personal-address-book'
         }
+        // {
+        //   text: 'Options',
+        //   link: '/guide/options'
+        // }
       ]
     },
     zhHans: {
       nav: [
         {
           text: '趣味学习',
-          link: '/zhHans/python/getting-started'
-        },
-        {
-          text: '选项',
-          link: '/zhHans/python/options'
+          link: '/zhHans/basic-grammar/41-字典-个人通讯录'
         }
+        // {
+        //   text: '选项',
+        //   link: '/zhHans/python/options'
+        // }
       ]
     }
   }
@@ -71,7 +71,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
 
 // Ref: https://vitepress.dev/reference/site-config
 const vitePressConfig: UserConfig = {
-  title: 'Python生活实验室',
+  title: 'PythonLifeLab',
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
@@ -79,23 +79,23 @@ const vitePressConfig: UserConfig = {
     'en/:rest*': ':rest*'
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/logo-32.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/logo-16.png' }],
-    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/logo.svg' }],
+    ['link', { rel: 'shortcut icon', href: '/logo.svg' }]
   ],
   sitemap: {
     hostname: packageJson.homepage
   },
   themeConfig: {
-    logo: { src: '/logo-32.png', width: 24, height: 24 },
+    logo: { src: '/logo.svg', width: 24, height: 24 },
     editLink: {
       pattern: editLinkPattern
-    },
-    socialLinks: [{ icon: 'github', link: packageJson.repository.url.replace('.git', '') }],
-    footer: {
-      message: 'Released under the MIT License',
-      copyright: '© <a href="https://gitee.com/xhwtt/my-blog">CDGet</a>'
     }
+    // socialLinks: [{ icon: 'github', link: packageJson.repository.url.replace('.git', '') }],
+    // footer: {
+    //   message: 'Released under the MIT License',
+    //   copyright: '© <a href="https://gitee.com/xhwtt/my-blog">CDGet</a>'
+    // }
   }
 };
 
