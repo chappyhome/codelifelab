@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /zhHans/basic-grammar/41-字典-个人通讯录
+      link: /zhHans/basic-grammar/personal-address-book
   image:
     src: /sidebar.svg
     alt: Sidebar

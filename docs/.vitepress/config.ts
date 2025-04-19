@@ -46,7 +46,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
       nav: [
         {
           text: 'Fun Learning',
-          link: '/basic-grammar/41-personal-address-book'
+          link: '/basic-grammar/personal-address-book'
         }
         // {
         //   text: 'Options',
@@ -58,7 +58,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
       nav: [
         {
           text: '趣味学习',
-          link: '/zhHans/basic-grammar/41-字典-个人通讯录'
+          link: '/zhHans/basic-grammar/personal-address-book'
         }
         // {
         //   text: '选项',
