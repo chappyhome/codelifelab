@@ -88,9 +88,21 @@ const vitePressConfig: UserConfig = {
   sitemap: {
     hostname: packageJson.homepage
   },
+  // 生产环境使用
   transformHead: ({ pageData }) => {
-    const canonicalUrl = `${siteUrl}/${pageData.relativePath.replace(/\.md$/, '.html')}`;
+    const canonicalUrl = `${siteUrl}/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html');
     return [['link', { rel: 'canonical', href: canonicalUrl }]];
+  },
+  // 开发环境使用
+  transformPageData: (pageData) => {
+    const canonicalUrl = `https://codelifelab.top/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html');
+
+    pageData.frontmatter.head ??= [];
+    pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }]);
   },
   themeConfig: {
     logo: { src: '/logo.svg', width: 24, height: 24 },
