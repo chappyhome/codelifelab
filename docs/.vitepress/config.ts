@@ -74,7 +74,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
 const vitePressConfig: UserConfig = {
   title: 'PythonLifeLab',
   lastUpdated: true,
-  cleanUrls: true,
+  cleanUrls: false,
   metaChunk: true,
   rewrites: {
     'en/:rest*': ':rest*',
