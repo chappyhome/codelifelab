@@ -89,7 +89,8 @@ const vitePressConfig: UserConfig = {
     hostname: packageJson.homepage
   },
   transformHead: ({ pageData }) => {
-    const canonicalUrl = `${siteUrl}${pageData.relativePath.replace(/\.md$/, '').replace(/index$/, '')}`;
+    const path = pageData.relativePath.replace(/\.md$/, '.html');
+    const canonicalUrl = `${siteUrl}/${path}`;
     return [
       [
         'link',
