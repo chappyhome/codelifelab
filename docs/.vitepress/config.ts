@@ -77,7 +77,8 @@ const vitePressConfig: UserConfig = {
   cleanUrls: true,
   metaChunk: true,
   rewrites: {
-    'en/:rest*': ':rest*'
+    'en/:rest*': ':rest*',
+    'zhHans/:rest*': 'zhHans/:rest*'
   },
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/logo.svg' }],
