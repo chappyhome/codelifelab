@@ -5,6 +5,7 @@ import { withI18n } from 'vitepress-i18n';
 import type { VitePressI18nOptions } from 'vitepress-i18n/types';
 import type { VitePressSidebarOptions } from '../../config/types.js';
 
+const siteUrl = 'https://codelifelab.top';
 const defaultLocale: string = 'en';
 const supportLocales: string[] = [defaultLocale, 'zhHans'];
 const editLinkPattern = `${packageJson.repository.url}/edit/main/docs/:path`;
@@ -86,12 +87,15 @@ const vitePressConfig: UserConfig = {
   sitemap: {
     hostname: packageJson.homepage
   },
+  transformHead: ({ pageData }) => {
+    const canonicalUrl = `${siteUrl}/${pageData.relativePath.replace(/\.md$/, '.html')}`;
+    return [['link', { rel: 'canonical', href: canonicalUrl }]];
+  },
   themeConfig: {
     logo: { src: '/logo.svg', width: 24, height: 24 },
     editLink: {
       pattern: editLinkPattern
     }
-    // socialLinks: [{ icon: 'github', link: packageJson.repository.url.replace('.git', '') }],
     // footer: {
     //   message: 'Released under the MIT License',
     //   copyright: '© <a href="https://gitee.com/xhwtt/my-blog">CDGet</a>'
