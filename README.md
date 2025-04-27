@@ -105,4 +105,4 @@ Anyone can contribute to the project by reporting new issues or submitting a pul
 
 ## License
 
-Please see the [LICENSE](LICENSE) file for more information about project owners, usage rights, and more.
+Please see the <!--[LICENSE](LICENSE)--> file for more information about project owners, usage rights, and more.
