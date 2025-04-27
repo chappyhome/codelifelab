@@ -73,6 +73,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
 // Ref: https://vitepress.dev/reference/site-config
 const vitePressConfig: UserConfig = {
   title: 'PythonLifeLab',
+  base: '/',
   lastUpdated: true,
   cleanUrls: false,
   metaChunk: true,
