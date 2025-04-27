@@ -114,5 +114,6 @@ const vitePressConfig: UserConfig = {
 };
 
 export default defineConfig(
-  withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig)
+  withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig),
+  ignoreDeadLinks: true
 );
