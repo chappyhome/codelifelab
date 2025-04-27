@@ -76,6 +76,7 @@ const vitePressConfig: UserConfig = {
   lastUpdated: true,
   cleanUrls: false,
   metaChunk: true,
+  ignoreDeadLinks: true,
   rewrites: {
     'en/:rest*': ':rest*',
     'zhHans/:rest*': 'zhHans/:rest*'
@@ -114,6 +115,5 @@ const vitePressConfig: UserConfig = {
 };
 
 export default defineConfig(
-  withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig),
-  ignoreDeadLinks: true
+  withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig)
 );
